@@ -4,14 +4,12 @@ import { GiCrossroad } from 'react-icons/gi';
 import { MdAirlineSeatReclineExtra, MdEventSeat } from 'react-icons/md';
 import { IoPersonAddSharp } from 'react-icons/io5';
 import _, { isEmpty } from 'lodash';
-// import { withUser, withUserProfile } from '../../../recoil/parkUser';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import { toast } from 'react-toastify';
 import SelectRideSeats from '../SelectRideSeats';
 import { catchAxiosErrors } from '../../../Utils';
 import { postRequest } from '../../../Utils/axiosClient';
 import { userRideBookedSeatsAtom } from '../../../recoil/userRideBookedSeats';
-// import { getUserTypeAtom } from '../../../recoil/getUserType'
 import PropTypes from 'prop-types';
 import './BookingForm.css';
 
@@ -149,12 +147,12 @@ const BookingForm = ({ busId, rideAmount, summary }) => {
                           
                           <div className="col-sm-12 col-md-6 mb-3">
                             <label htmlFor="" className="text-label fs-5 m-0">Departure Date</label>
-                            <input onChange={e => setLeavingDate(e.target.value)} type="date" className="form-control" />
+                            <input onChange={e => setLeavingDate(e.target.value)} value={leaving_date} type="date" className="form-control" />
                           </div>
 
                           <div className="col-sm-12 col-md-6 mb-3">
                             <label htmlFor="" className="text-label fs-5 m-0">Choose Seat</label>
-                            <select onChange={e => setSeats(e.target.value)} className="form-control">
+                            <select onChange={e => setSeats(e.target.value)} value={seats} className="form-control">
                               <option value={1}>One Seat | 1</option>
                               <option value={2}>Two Seats | 2</option>
                               <option value={3}>Three Seats | 3</option>
@@ -196,17 +194,17 @@ const BookingForm = ({ busId, rideAmount, summary }) => {
                         <div className="row">
                           <div className="col-sm-12 col-md-6 mb-3">
                             <label htmlFor="" className="text-label fs-5 m-0">Departure Date</label>
-                            <input onChange={e => setLeavingDate(e.target.value)} type="date" className="form-control" />
+                            <input onChange={e => setLeavingDate(e.target.value)} value={leaving_date} type="date" className="form-control" />
                           </div>
 
                           <div className="col-sm-12 col-md-6 mb-3">
                             <label htmlFor="" className="text-label fs-5 m-0">Returning Date</label>
-                            <input onChange={e => setReturningDate(e.target.value)} type="date" className="form-control" />
+                            <input onChange={e => setReturningDate(e.target.value)} value={returning_date} type="date" className="form-control" />
                           </div>
 
                           <div className="col-sm-12 col-md-12 mb-3">
                             <label htmlFor="" className="text-label fs-5 m-0">Choose Seat</label>
-                            <select onChange={e => setSeats(e.target.value)} className="form-control">
+                            <select onChange={e => setSeats(e.target.value)} value={seats} className="form-control">
                               <option value={1}>One Seat | 1</option>
                               <option value={2}>Two Seats | 2</option>
                               <option value={3}>Three Seats | 3</option>
