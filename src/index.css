@@ -1,0 +1,70 @@
+.pointer {
+  cursor: pointer;
+}
+
+.fs-1 {
+  font-size: 3rem;
+}
+
+.fs-2 {
+  font-size: 2.5rem;
+}
+
+.fs-3 {
+  font-size: 2rem;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+}
+
+.fs-5 {
+  font-size: 1rem;
+}
+
+.fs-6 {
+  font-size: 0.95rem;
+}
+
+.fs-7 {
+  font-size: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.error-msg {
+  font-size: smaller !important;
+}
+
+.bg-dark-yellow {
+  background: #ffbf00;
+  color: #020200;
+}
+
+.saluation {
+  font-weight: 400;
+  letter-spacing: 0.2pt;
+}
+
+.salutation__overline {
+  font-weight: 300;
+  letter-spacing: 0.3pt;
+}
+
+.letter__tight {
+  letter-spacing: 0.3pt;
+}
+
+.letter__wide {
+  letter-spacing: 0.6pt;
+}
+
+.custom-hide {
+  display: none !important;
+}
+
+li a {
+  cursor: pointer;
+}

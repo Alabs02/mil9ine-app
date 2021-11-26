@@ -1,0 +1,16 @@
+.search-card {
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 780px) {
+  .search-card {
+    padding: 2rem 4rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
