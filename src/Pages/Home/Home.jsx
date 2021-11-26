@@ -189,7 +189,7 @@ const Home = () => {
                   <source src="media/video/trucks.webm" type="video/webm" />
                 </video>
                 {/* === READ MORE BUTTON === */}	
-                <Link to="/"><div className="home-about-button">
+                {/*<Link to="/"><div className="home-about-button">
                     <div className="my-btn my-btn-primary">
                       <div className="my-btn-bg-top" />
                       <div className="my-btn-bg-bottom" />
@@ -197,7 +197,7 @@ const Home = () => {
                         READ
                       </div>
                     </div>
-                  </div></Link>
+                </div></Link>*/}
               </div>
             </div>
             {/* === GET QUOTE === */}	
