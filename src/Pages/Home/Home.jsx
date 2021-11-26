@@ -143,7 +143,7 @@ const Home = () => {
       {/* ===================================
           SECTION ABOUT US AND GET QUOTE
         ======================================== */}
-      <section className="def-section about-quote" id="bookaride">
+      <section className="def-section about-quote">
         <div className="section-bg-left" />
         <div className="section-bg-right" />
         <div className="container">
@@ -201,7 +201,7 @@ const Home = () => {
               </div>
             </div>
             {/* === GET QUOTE === */}	
-            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 get-quote">
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 get-quote" id="bookaride">
               {/* === TITLE GROUP === */}
               <div className="title-group">
                 <h2>BOOK A RIDE</h2>
