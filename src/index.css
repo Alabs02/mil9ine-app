@@ -68,3 +68,32 @@
 li a {
   cursor: pointer;
 }
+
+.span__link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.span__link:hover {
+  text-decoration: underline;
+}
+
+.app__modal {
+  width: 95% !important;
+}
+
+@media screen and (min-width: 780px) {
+  .app__modal {
+    width: 70% !important;
+  }
+}
+
+.text-light {
+  color: #757575 !important;
+}
+
+.text-justify {
+  text-align: justify;
+}

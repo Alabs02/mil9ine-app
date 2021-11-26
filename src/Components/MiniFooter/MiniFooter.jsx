@@ -1,11 +1,15 @@
 import { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import { locationRef } from '../../Utils';
+import Modal from '../Modal';
 
 const MiniFooter = () => {
 
-  const history = useHistory();
+  // const history = useHistory();
+  const domain = process.env.NODE_ENV === 'production'
+    ? 'https://mile9ine.com/'
+    : 'http://localhost:3001/';
   
   return (
     <Fragment>
@@ -59,7 +63,7 @@ const MiniFooter = () => {
             </div>
             {/* === BOTTOM RIGHT === */}
             <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 bottom-3">
-              <a href={null}>TERM OF USE</a> | 
+              <Modal /> | 
               MADE BY <a href="/">MILE <span className="color-primary">9INE</span></a>
             </div>
           </div>
@@ -81,7 +85,7 @@ const MiniFooter = () => {
         {/* === SLIDE MENU === */}	
         <ul id="left-menu" className="left-menu">
           {/* === SLIDE MENU ITEM === */}	
-          <li onClick={() => window.location.reload(history.push('/'))}> 
+          <li onClick={() => window.location.href = domain}> 
             <a  href={null}>Home</a>
             {/* === slide menu child === */}	
           </li>

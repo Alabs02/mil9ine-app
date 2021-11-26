@@ -1,11 +1,14 @@
 import { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import { locationRef } from '../../Utils';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 const NavBar = () => {
 
-  const history = useHistory();
+  // const history = useHistory();
+  const domain = process.env.NODE_ENV === 'production'
+    ? 'https://mile9ine.com/'
+    : 'http://localhost:3001/';
 
   return (
     <Fragment>
@@ -68,7 +71,7 @@ const NavBar = () => {
             <div className="collapse navbar-collapse main-menu main-menu-1" id="main-menu">
               <ul className="nav navbar-nav">
                 {/* === top menu item === */}
-                <li onClick={() => window.location.reload(history.push('/'))}>
+                <li onClick={() => window.location.href = domain}>
                   <a>Home</a>
                 </li> 
                 <li className="main-menu-separator" />

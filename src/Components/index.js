@@ -6,6 +6,7 @@ import MiniFooter from './MiniFooter/MiniFooter';
 import Subscribe from './Subscribe/Subscribe';
 import AppStats from './AppStats/AppStats';
 import HomeSection from './HomeSection/HomeSection';
+import Modal from './Modal/Modal';
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   Subscribe,
   AppStats,
   HomeSection,
+  Modal,
 }
