@@ -176,7 +176,7 @@ const SelectRideSeats = ({ formData, summary }) => {
 
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
-                      <h5>Seat NUmber(s)</h5>
+                      <h5>Seat Number(s)</h5>
                       <p className="seats">[{seating_positions.toString()}] Seats</p>
                     </div>
                     <div>
